@@ -2,34 +2,40 @@
 
 declare(strict_types=1);
 
-use Isolated\Symfony\Component\Finder\Finder;
+use Hobosoft\Finders\FileFinder;
+use Nette\Utils\Strings;
+
+//use Isolated\Symfony\Component\Finder\Finder;
 
 require __DIR__ . '/vendor/autoload.php';
 
 $timestamp = (new DateTime('now'))->format('Ym');
 
 // @see https://github.com/humbug/php-scoper/blob/master/docs/further-reading.md
-use Nette\Utils\Strings;
 
 $polyfillsBootstraps = array_map(
     static fn (SplFileInfo $fileInfo) => $fileInfo->getPathname(),
     iterator_to_array(
-        Finder::create()
+/*        Finder::create()
             ->files()
             ->in(__DIR__ . '/vendor/symfony/polyfill-*')
-            ->name('bootstrap*.php'),
-        false,
+            ->name('bootstrap*.php'),*/
+        (new FileFinder())->wantFiles(true)->includePath([__DIR__ . '/vendor/symfony/polyfill-*']) ->acceptFileCallback(function (SplFileInfo $fileInfo) {
+            $ext = pathinfo($fileInfo->getPathname(), PATHINFO_EXTENSION);
+            $filename = pathinfo($fileInfo->getPathname(), PATHINFO_FILENAME);
+            return ($ext === 'php' && str_starts_with($filename, 'bootstrap'));
+        })->find(), false,
     ),
 );
 
 $polyfillsStubs = array_map(
     static fn (SplFileInfo $fileInfo) => $fileInfo->getPathname(),
     iterator_to_array(
-        Finder::create()
-            ->files()
-            ->in(__DIR__ . '/vendor/symfony/polyfill-*/Resources/stubs')
-            ->name('*.php'),
-        false,
+        (new FileFinder())->wantFiles(true)->includePath([__DIR__ . '/vendor/symfony/polyfill-*']) ->acceptFileCallback(function (SplFileInfo $fileInfo) {
+            $ext = pathinfo($fileInfo->getPathname(), PATHINFO_EXTENSION);
+            $filename = pathinfo($fileInfo->getPathname(), PATHINFO_FILENAME);
+            return ($ext === 'php');
+        })->find(), false
     ),
 );
 

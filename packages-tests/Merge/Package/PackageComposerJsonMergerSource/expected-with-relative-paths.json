@@ -6,8 +6,8 @@
     },
     "autoload": {
         "psr-4": {
-            "Symplify\\MonorepoBuilder\\": "packages/monorepo-builder/packages-tests/Merge/Package/Source/src",
-            "Symplify\\Statie\\": "packages/monorepo-builder/packages-tests/Merge/Package/Source/src"
+            "Symplify\\MonorepoBuilder\\": "monorepo-builder/packages-tests/Merge/Package/Source/src",
+            "Symplify\\Statie\\": "monorepo-builder/packages-tests/Merge/Package/Source/src"
         }
     }
 }

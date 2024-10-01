@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace Symplify\MonorepoBuilder\Tests\ComposerJsonManipulator\Sorter;
 
-use PHPUnit\Framework\Attributes\DataProvider;
 use Iterator;
+use PHPUnit\Framework\Attributes\DataProvider;
 use Symplify\MonorepoBuilder\ComposerJsonManipulator\Sorter\ComposerPackageSorter;
 use Symplify\MonorepoBuilder\Kernel\MonorepoBuilderKernel;
 use Symplify\PackageBuilder\Testing\AbstractKernelTestCase;

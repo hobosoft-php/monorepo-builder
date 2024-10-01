@@ -1,56 +1,56 @@
 {
     "autoload": {
         "classmap": [
-            "packages/monorepo-builder/packages-tests/Merge/Package/SourceIdenticalNamespaces/PackageA/Something.php",
-            "packages/monorepo-builder/packages-tests/Merge/Package/SourceIdenticalNamespaces/PackageA/lib/",
-            "packages/monorepo-builder/packages-tests/Merge/Package/SourceIdenticalNamespaces/PackageA/src/"
+            "monorepo-builder/packages-tests/Merge/Package/SourceIdenticalNamespaces/PackageA/Something.php",
+            "monorepo-builder/packages-tests/Merge/Package/SourceIdenticalNamespaces/PackageA/lib/",
+            "monorepo-builder/packages-tests/Merge/Package/SourceIdenticalNamespaces/PackageA/src/"
         ],
         "exclude-from-classmap": [
-            "packages/monorepo-builder/packages-tests/Merge/Package/SourceIdenticalNamespaces/PackageA/Tests/",
-            "packages/monorepo-builder/packages-tests/Merge/Package/SourceIdenticalNamespaces/PackageA/test/",
-            "packages/monorepo-builder/packages-tests/Merge/Package/SourceIdenticalNamespaces/PackageA/tests/"
+            "monorepo-builder/packages-tests/Merge/Package/SourceIdenticalNamespaces/PackageA/Tests/",
+            "monorepo-builder/packages-tests/Merge/Package/SourceIdenticalNamespaces/PackageA/test/",
+            "monorepo-builder/packages-tests/Merge/Package/SourceIdenticalNamespaces/PackageA/tests/"
         ],
         "files": [
-            "packages/monorepo-builder/packages-tests/Merge/Package/SourceIdenticalNamespaces/PackageA/src/MyLibrary/functions.php"
+            "monorepo-builder/packages-tests/Merge/Package/SourceIdenticalNamespaces/PackageA/src/MyLibrary/functions.php"
         ],
         "psr-0": {
-            "": "packages/monorepo-builder/packages-tests/Merge/Package/SourceIdenticalNamespaces/PackageA/src/",
-            "Monolog\\": "packages/monorepo-builder/packages-tests/Merge/Package/SourceIdenticalNamespaces/PackageA/src/",
-            "UniqueGlobalClass": "packages/monorepo-builder/packages-tests/Merge/Package/SourceIdenticalNamespaces/PackageA/",
+            "": "monorepo-builder/packages-tests/Merge/Package/SourceIdenticalNamespaces/PackageA/src/",
+            "Monolog\\": "monorepo-builder/packages-tests/Merge/Package/SourceIdenticalNamespaces/PackageA/src/",
+            "UniqueGlobalClass": "monorepo-builder/packages-tests/Merge/Package/SourceIdenticalNamespaces/PackageA/",
             "Vendor\\Namespace\\": [
-                "packages/monorepo-builder/packages-tests/Merge/Package/SourceIdenticalNamespaces/PackageA/lib/",
-                "packages/monorepo-builder/packages-tests/Merge/Package/SourceIdenticalNamespaces/PackageA/src/"
+                "monorepo-builder/packages-tests/Merge/Package/SourceIdenticalNamespaces/PackageA/lib/",
+                "monorepo-builder/packages-tests/Merge/Package/SourceIdenticalNamespaces/PackageA/src/"
             ],
-            "Vendor_Namespace_": "packages/monorepo-builder/packages-tests/Merge/Package/SourceIdenticalNamespaces/PackageA/src/"
+            "Vendor_Namespace_": "monorepo-builder/packages-tests/Merge/Package/SourceIdenticalNamespaces/PackageA/src/"
         },
         "psr-4": {
             "App\\Collection\\": [
-                "packages/monorepo-builder/packages-tests/Merge/Package/SourceIdenticalNamespaces/PackageA/src/collection",
-                "packages/monorepo-builder/packages-tests/Merge/Package/SourceIdenticalNamespaces/PackageB/src/collection"
+                "monorepo-builder/packages-tests/Merge/Package/SourceIdenticalNamespaces/PackageA/src/collection",
+                "monorepo-builder/packages-tests/Merge/Package/SourceIdenticalNamespaces/PackageB/src/collection"
             ],
             "App\\Core\\": [
-                "packages/monorepo-builder/packages-tests/Merge/Package/SourceIdenticalNamespaces/PackageA/src/core",
-                "packages/monorepo-builder/packages-tests/Merge/Package/SourceIdenticalNamespaces/PackageB/src/core-extension"
+                "monorepo-builder/packages-tests/Merge/Package/SourceIdenticalNamespaces/PackageA/src/core",
+                "monorepo-builder/packages-tests/Merge/Package/SourceIdenticalNamespaces/PackageB/src/core-extension"
             ],
             "App\\FixedArray\\": [
-                "packages/monorepo-builder/packages-tests/Merge/Package/SourceIdenticalNamespaces/PackageA/src/array",
-                "packages/monorepo-builder/packages-tests/Merge/Package/SourceIdenticalNamespaces/PackageA/src/list"
+                "monorepo-builder/packages-tests/Merge/Package/SourceIdenticalNamespaces/PackageA/src/array",
+                "monorepo-builder/packages-tests/Merge/Package/SourceIdenticalNamespaces/PackageA/src/list"
             ],
             "App\\Model\\": [
-                "packages/monorepo-builder/packages-tests/Merge/Package/SourceIdenticalNamespaces/PackageB/src/interfaces",
-                "packages/monorepo-builder/packages-tests/Merge/Package/SourceIdenticalNamespaces/SubA/PackageC/src/models"
+                "monorepo-builder/packages-tests/Merge/Package/SourceIdenticalNamespaces/PackageB/src/interfaces",
+                "monorepo-builder/packages-tests/Merge/Package/SourceIdenticalNamespaces/SubA/PackageC/src/models"
             ],
             "App\\Shared\\": [
-                "packages/monorepo-builder/packages-tests/Merge/Package/SourceIdenticalNamespaces/PackageA/src/shared",
-                "packages/monorepo-builder/packages-tests/Merge/Package/SourceIdenticalNamespaces/PackageB/src/shared"
+                "monorepo-builder/packages-tests/Merge/Package/SourceIdenticalNamespaces/PackageA/src/shared",
+                "monorepo-builder/packages-tests/Merge/Package/SourceIdenticalNamespaces/PackageB/src/shared"
             ],
             "App\\Sub\\": [
-                "packages/monorepo-builder/packages-tests/Merge/Package/SourceIdenticalNamespaces/SubA/PackageC/src/package-c",
-                "packages/monorepo-builder/packages-tests/Merge/Package/SourceIdenticalNamespaces/SubB/PackageD/src/package-d"
+                "monorepo-builder/packages-tests/Merge/Package/SourceIdenticalNamespaces/SubA/PackageC/src/package-c",
+                "monorepo-builder/packages-tests/Merge/Package/SourceIdenticalNamespaces/SubB/PackageD/src/package-d"
             ],
             "App\\YetAnother\\": [
-                "packages/monorepo-builder/packages-tests/Merge/Package/SourceIdenticalNamespaces/PackageA/src",
-                "packages/monorepo-builder/packages-tests/Merge/Package/SourceIdenticalNamespaces/PackageB/src"
+                "monorepo-builder/packages-tests/Merge/Package/SourceIdenticalNamespaces/PackageA/src",
+                "monorepo-builder/packages-tests/Merge/Package/SourceIdenticalNamespaces/PackageB/src"
             ]
         }
     }

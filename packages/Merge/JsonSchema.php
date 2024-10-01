@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Symplify\MonorepoBuilder\Merge;
 
 use RuntimeException;
+
 final class JsonSchema
 {
     private array $composerSchema;

@@ -7,8 +7,8 @@ namespace Symplify\MonorepoBuilder\Merge;
 use Symplify\MonorepoBuilder\ComposerJsonManipulator\ComposerJsonFactory;
 use Symplify\MonorepoBuilder\ComposerJsonManipulator\ValueObject\ComposerJson;
 use Symplify\MonorepoBuilder\Merge\Configuration\MergedPackagesCollector;
-use Symplify\MonorepoBuilder\Merge\Contract\ComposerPathNormalizerInterface;
 use Symplify\MonorepoBuilder\Merge\Contract\ComposerKeyMergerInterface;
+use Symplify\MonorepoBuilder\Merge\Contract\ComposerPathNormalizerInterface;
 use Symplify\SmartFileSystem\SmartFileInfo;
 
 final class ComposerJsonMerger

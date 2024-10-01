@@ -3,7 +3,7 @@
     "repositories": [
         {
             "type": "path",
-            "url": "../../../packages/package-two",
+            "url": "../../../package-two",
             "options": {
                 "symlink": false
             }

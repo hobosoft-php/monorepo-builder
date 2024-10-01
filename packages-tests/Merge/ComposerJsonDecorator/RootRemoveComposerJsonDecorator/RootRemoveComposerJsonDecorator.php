@@ -29,7 +29,7 @@ final class RootRemoveComposerJsonDecorator extends AbstractComposerJsonDecorato
     public function test(): void
     {
         $composerJson = $this->composerJsonFactory->createFromFilePath(__DIR__ . '/Source/composer.json');
-        $extraComposerJson = $this->composerJsonFactory->createFromFilePath(__DIR__ . '/Source/packages/composer.json');
+        $extraComposerJson = $this->composerJsonFactory->createFromFilePath(__DIR__ . '/Source/composer.json');
 
         $this->composerJsonMerger->mergeJsonToRoot($composerJson, $extraComposerJson);
 

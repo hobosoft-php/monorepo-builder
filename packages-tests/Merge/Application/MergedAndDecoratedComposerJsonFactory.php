@@ -30,8 +30,8 @@ final class MergedAndDecoratedComposerJsonFactory extends AbstractComposerJsonDe
         $mainComposerJson = $this->createComposerJson(__DIR__ . '/Source/root_composer.json');
 
         $packagesFileInfos = [
-            new SmartFileInfo(__DIR__ . '/Source/packages/one_package.json'),
-            new SmartFileInfo(__DIR__ . '/Source/packages/two_package.json'),
+            new SmartFileInfo(__DIR__ . '/Source/one_package.json'),
+            new SmartFileInfo(__DIR__ . '/Source/two_package.json'),
         ];
 
         $this->mergedAndDecoratedComposerJsonFactory->createFromRootConfigAndPackageFileInfos(

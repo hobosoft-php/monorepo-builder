@@ -4,8 +4,6 @@ declare(strict_types=1);
 
 namespace Symplify\MonorepoBuilder\Merge\Arrays;
 
-use Symplify\MonorepoBuilder\Merge\JsonSchema;
-
 final class ArraySorter
 {
     /**

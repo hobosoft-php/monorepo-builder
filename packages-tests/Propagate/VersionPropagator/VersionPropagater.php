@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace Symplify\MonorepoBuilder\Tests\Propagate\VersionPropagator;
 
-use PHPUnit\Framework\Attributes\DataProvider;
 use Iterator;
+use PHPUnit\Framework\Attributes\DataProvider;
 use Symplify\EasyTesting\DataProvider\StaticFixtureFinder;
 use Symplify\MonorepoBuilder\Propagate\VersionPropagator;
 use Symplify\MonorepoBuilder\Tests\Merge\ComposerJsonDecorator\AbstractComposerJsonDecorator;

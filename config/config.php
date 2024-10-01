@@ -14,8 +14,9 @@ use Symplify\PackageBuilder\Console\Style\SymfonyStyleFactory;
 use Symplify\PackageBuilder\Parameter\ParameterProvider;
 use Symplify\PackageBuilder\Reflection\PrivatesCaller;
 use Symplify\PackageBuilder\Yaml\ParametersMerger;
-
 use function Symfony\Component\DependencyInjection\Loader\Configurator\service;
+
+
 
 return static function (MBConfig $mbConfig): void {
     $parameters = $mbConfig->parameters();
@@ -49,7 +50,7 @@ return static function (MBConfig $mbConfig): void {
     $services->load('Symplify\MonorepoBuilder\\', __DIR__ . '/../packages')
         ->exclude([
             // register manually
-            __DIR__ . '/../packages/Release/ReleaseWorker',
+            __DIR__ . '/../Release/ReleaseWorker',
         ]);
 
     if (! $mbConfig->isDisableDefaultWorkers()) {

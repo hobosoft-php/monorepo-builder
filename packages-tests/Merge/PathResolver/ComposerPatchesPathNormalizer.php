@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Symplify\MonorepoBuilder\Tests\Merge\PathResolver;
 
-use Symplify\MonorepoBuilder\Merge\PathResolver\ComposerPatchesPathNormalizer;
 use Symplify\MonorepoBuilder\Tests\Merge\ComposerJsonDecorator\AbstractComposerJsonDecorator;
 
 final class ComposerPatchesPathNormalizer extends AbstractComposerJsonDecorator
